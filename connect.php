@@ -5,7 +5,7 @@ $user = 'ohbmnlctuvkhbw';
 $pass = '766df0fc2656fe78a9569ed3cdfb3fdf816eb5f7c10db785adf27d82f88a496b'; 
 $connection = new PDO("pgsql:host=$host;dbname=$dbname", $user, $pass); 
  
-$result = $connection->query("SELECT * FROM polls"); 
+$result = $connection->query("SELECT * FROM uniform"); 
  
 if($result !== null) {     
 	echo $result->rowCount(); 
